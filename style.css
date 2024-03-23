@@ -313,6 +313,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 300px;
 }
 .logo {
     display: grid;
@@ -423,7 +424,7 @@ strong:hover{
     scrollbar-width: none !important;
 }
 .h {
-    width: 100%;
+
     height: 100px;
     display: flex;
     justify-content: center;
@@ -443,7 +444,7 @@ strong:hover{
     box-shadow: 10px 10px 20px 15px #F44336;
 }
 .hh , .aa {
-    width: auto;
+
     height: 100px;
     display: flex;
     justify-content: center;
@@ -464,7 +465,7 @@ strong:hover{
     box-shadow: 10px 10px 20px 15px #F44336;
 }
 .hhh {
-    width: 100%;
+
     height: 100px;
     display: flex;
     justify-content: center;
@@ -557,4 +558,44 @@ mark:hover{
 }
 main{
     margin: 50px 0;
+}
+
+
+@media only screen and (max-width: 991px) {
+    body {
+        grid-template-rows: 400px 150px 300px auto  auto 500px;
+        grid-template-areas: "h h h" "t t t" "n n n" "s s s" "v v v" "a a a " "f f f";
+    }
+
+    aside {
+        grid-area: a;
+        display: grid;
+        padding: 20px;
+        background-size: cover;
+        overflow: auto;
+        justify-content: center;
+    }
+
+    .v{
+        grid-area: v;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #663399;
+        margin: 40px;
+        background-image: url("blurry-gradient-haikei (3).png");
+        background-size: cover;
+        border-radius: 30px;
+        font-size: 3em;
+        box-shadow: 10px 10px 20px 10px #298cfd;
+        padding: 20px;
+        transition: all 0.5s;
+        color: #2196f3;
+        background-color: rgb(14, 2, 68);
+    }
+    .v:hover{
+        box-shadow: 10px 10px 20px 15px #298cfd;
+    }
+
+    
 }
